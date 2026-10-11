@@ -40,7 +40,7 @@ public class GeocodingService {
             map.put("longitude", longitude);
             return map;
         }catch (Exception e){
-            System.out.println( e.getMessage());
+            e.getMessage();
         }
         return null;
     }
