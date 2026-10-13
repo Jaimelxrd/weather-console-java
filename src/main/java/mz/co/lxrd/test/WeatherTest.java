@@ -1,5 +1,6 @@
 package mz.co.lxrd.test;
 
+import mz.co.lxrd.model.CityData;
 import mz.co.lxrd.services.GeocodingService;
 import mz.co.lxrd.services.WeatherService;
 
@@ -12,7 +13,7 @@ public class WeatherTest {
         GeocodingService gs = new GeocodingService();
         WeatherService ws = new WeatherService();
 
-        Map<String, Double> cordenadas =gs.obterCoordenadas(cidade);
+        CityData cordenadas =gs.obterCoordenadas(cidade);
         System.out.println(ws.consultarMeteorologia(cordenadas));
 
 
